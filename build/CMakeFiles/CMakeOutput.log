@@ -1,0 +1,1059 @@
+The system is: Linux - 4.18.0-240.22.1.el8_3.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/3.18.0/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/3.18.0/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2dd1f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2dd1f.dir/build.make CMakeFiles/cmTC_2dd1f.dir/build
+gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc   -v -o CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o -c /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/cc1 -quiet -v /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o -version -o /tmp/cctTrSPt.s
+GNU C17 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"
+ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include
+ /p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw
+ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include
+ /p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2
+ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include
+ /p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include
+ /p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include
+ /p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: ef8d1efe21c70b62019b51a1882dcf09
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o /tmp/cctTrSPt.s
+GNU assembler version 2.34 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.34
+COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_2dd1f
+/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2dd1f.dir/link.txt --verbose=1
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc  -v CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o -o cmTC_2dd1f 
+Using built-in specs.
+COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc
+COLLECT_LTO_WRAPPER=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2dd1f' '-mtune=generic' '-march=x86-64'
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEMBs4B.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2dd1f /lib/../lib64/crt1.o /lib/../lib64/crti.o /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib -L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64 -L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib -L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2dd1f' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+    add: [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+    add: [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include] ==> [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include] ==> [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include;/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include;/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include;/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include;/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_2dd1f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2dd1f.dir/build.make CMakeFiles/cmTC_2dd1f.dir/build]
+  ignore line: [gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc   -v -o CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o -c /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/cc1 -quiet -v /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o -version -o /tmp/cctTrSPt.s]
+  ignore line: [GNU C17 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: ef8d1efe21c70b62019b51a1882dcf09]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o /tmp/cctTrSPt.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.34]
+  ignore line: [COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_2dd1f]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2dd1f.dir/link.txt --verbose=1]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc  -v CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o -o cmTC_2dd1f ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2dd1f' '-mtune=generic' '-march=x86-64']
+  link line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEMBs4B.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2dd1f /lib/../lib64/crt1.o /lib/../lib64/crti.o /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib -L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64 -L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib -L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccEMBs4B.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2dd1f] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o] ==> ignore
+    arg [-L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64] ==> dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64] ==> dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs] ==> dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..]
+    arg [CMakeFiles/cmTC_2dd1f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib] ==> [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib] ==> [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib64;/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib64;/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib64;/lib64;/usr/lib64;/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib;/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64;/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64;/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib;/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_cca28/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cca28.dir/build.make CMakeFiles/cmTC_cca28.dir/build
+gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++   -v -o CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o -c /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/cc1plus -quiet -v -D_GNU_SOURCE /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccwwomNO.s
+GNU C++14 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"
+ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include
+ /p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw
+ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include
+ /p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2
+ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include
+ /p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include
+ /p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include
+ /p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 6c3d551334ee14e3d06d628304ddf901
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwwomNO.s
+GNU assembler version 2.34 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.34
+COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_cca28
+/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cca28.dir/link.txt --verbose=1
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++  -v CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cca28 
+Using built-in specs.
+COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++
+COLLECT_LTO_WRAPPER=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cca28' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8MaQ5T.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cca28 /lib/../lib64/crt1.o /lib/../lib64/crti.o /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib -L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64 -L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib -L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cca28' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+    add: [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+    add: [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include] ==> [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include] ==> [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include/c++/9.3.0]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include/c++/9.3.0/x86_64-pc-linux-gnu]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include/c++/9.3.0/backward]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include;/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include;/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include;/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include;/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include/c++/9.3.0;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include/c++/9.3.0/x86_64-pc-linux-gnu;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include/c++/9.3.0/backward;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_cca28/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cca28.dir/build.make CMakeFiles/cmTC_cca28.dir/build]
+  ignore line: [gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++   -v -o CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o -c /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/cc1plus -quiet -v -D_GNU_SOURCE /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccwwomNO.s]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 6c3d551334ee14e3d06d628304ddf901]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwwomNO.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.34]
+  ignore line: [COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_cca28]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cca28.dir/link.txt --verbose=1]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++  -v CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cca28 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cca28' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8MaQ5T.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cca28 /lib/../lib64/crt1.o /lib/../lib64/crti.o /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib -L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64 -L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib -L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc8MaQ5T.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_cca28] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o] ==> ignore
+    arg [-L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64] ==> dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64] ==> dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs] ==> dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..]
+    arg [CMakeFiles/cmTC_cca28.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib] ==> [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib] ==> [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib64;/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib64;/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib64;/lib64;/usr/lib64;/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib;/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64;/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64;/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib;/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib]
+  implicit fwks: []
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+Driving: /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran -v CMakeFortranCompilerId.F -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran
+COLLECT_LTO_WRAPPER=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/tmp/ccqA7pl5.f90 -quiet -v CMakeFortranCompilerId.F -quiet -dumpbase CMakeFortranCompilerId.F -mtune=generic -march=x86-64 -auxbase CMakeFortranCompilerId -version -fintrinsic-modules-path /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccvDCsPp.s
+GNU Fortran (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"
+ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude
+ /p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include
+ /p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw
+ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include
+ /p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2
+ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include
+ /p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include
+ /p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include
+ /p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o /tmp/ccGVhvoK.o /tmp/ccvDCsPp.s
+GNU assembler version 2.34 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.34
+Reading specs from /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cczQEW04.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /lib/../lib64/crt1.o /lib/../lib64/crti.o /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib -L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64 -L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib -L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. /tmp/ccGVhvoK.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/3.18.0/CompilerIdFortran/a.out"
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2c8cd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2c8cd.dir/build.make CMakeFiles/cmTC_2c8cd.dir/build
+gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran   -v -c /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o
+Using built-in specs.
+COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64'
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/f951 /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/tmp/cc6mWCjr.f90 -quiet -v /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeFortranCompilerABI.F -quiet -dumpbase CMakeFortranCompilerABI.F -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o -version -fintrinsic-modules-path /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccdAH1GM.s
+GNU Fortran (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"
+ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude
+ /p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include
+ /p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw
+ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include
+ /p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2
+ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include
+ /p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include
+ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include
+ /p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include
+ /p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include
+ /usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o /tmp/ccdAH1GM.s
+GNU assembler version 2.34 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.34
+COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64'
+Linking Fortran executable cmTC_2c8cd
+/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c8cd.dir/link.txt --verbose=1
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran  -v CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o -o cmTC_2c8cd 
+Driving: /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran -v CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o -o cmTC_2c8cd -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran
+COLLECT_LTO_WRAPPER=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (GCC) 
+Reading specs from /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c8cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c8cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckdxhez.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2c8cd /lib/../lib64/crt1.o /lib/../lib64/crti.o /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib -L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64 -L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib -L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c8cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude]
+    add: [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+    add: [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+    add: [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+    add: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include] ==> [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include] ==> [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+  collapse include dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude;/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include;/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include;/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include;/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include;/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include;/usr/include]
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_2c8cd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2c8cd.dir/build.make CMakeFiles/cmTC_2c8cd.dir/build]
+  ignore line: [gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building Fortran object CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran   -v -c /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/f951 /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/tmp/cc6mWCjr.f90 -quiet -v /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CMakeFortranCompilerABI.F -quiet -dumpbase CMakeFortranCompilerABI.F -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o -version -fintrinsic-modules-path /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude -fpre-include=/usr/include/finclude/math-vector-fortran.h -o /tmp/ccdAH1GM.s]
+  ignore line: [GNU Fortran (GCC) version 9.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/finclude]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include/fftw]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include/libxml2]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/nvvm/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/extras/CUPTI/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/CUDA/11.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
+  ignore line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU Fortran2008 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o /tmp/ccdAH1GM.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.34]
+  ignore line: [COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-c' '-o' 'CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking Fortran executable cmTC_2c8cd]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c8cd.dir/link.txt --verbose=1]
+  ignore line: [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran  -v CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o -o cmTC_2c8cd ]
+  ignore line: [Driving: /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran -v CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o -o cmTC_2c8cd -l gfortran -l m -shared-libgcc]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --enable-languages=c,c++,fortran --without-cuda-driver --enable-offload-targets=nvptx-none --enable-lto --enable-checking=release --disable-multilib --enable-shared=yes --enable-static=yes --enable-threads=posix --enable-plugins --enable-gold=default --enable-ld --with-plugin-ld=ld.gold --prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --with-local-prefix=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0 --enable-bootstrap --with-isl=/dev/shm/swmanage/GCCcore/9.3.0/system-system/gcc-9.3.0/stage2_stuff --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [Reading specs from /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c8cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [COMPILER_PATH=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib/:/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64/:/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/:/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs/:/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/:/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/:/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib/:/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib/:/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c8cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckdxhez.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2c8cd /lib/../lib64/crt1.o /lib/../lib64/crti.o /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib -L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64 -L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64 -L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs -L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64 -L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64 -L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib -L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib -L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cckdxhez.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2c8cd] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o] ==> ignore
+    arg [-L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64] ==> dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64] ==> dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs] ==> dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64] ==> dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib] ==> dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib]
+    arg [-L/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..] ==> dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..]
+    arg [CMakeFiles/cmTC_2c8cd.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64/../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib] ==> [/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64] ==> [/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64] ==> [/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib] ==> [/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib] ==> [/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib]
+  collapse library dir [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..] ==> [/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib]
+  implicit libs: [gfortran;m;gcc_s;gcc;quadmath;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib64;/p/software/juwelsbooster/stages/2020/software/pscom/5.4-default/lib64;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib64;/p/software/juwelsbooster/stages/2020/software/nvidia-driver/default/lib64;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib64;/lib64;/usr/lib64;/p/software/juwelsbooster/stages/2020/software/Boost/1.74.0-gpsmpi-2020/lib;/p/software/juwelsbooster/stages/2020/software/ICU/67.1-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/bzip2/1.0.8-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/ncurses/6.2-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64;/p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/lib/intel64;/p/software/juwelsbooster/stages/2020/software/psmpi/5.4.7-1-GCC-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/libxml2/2.9.10-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/XZ/5.2.5-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/UCX/1.9.0/lib;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64/stubs;/p/software/juwelsbooster/stages/2020/software/CUDA/11.0/lib64;/p/software/juwelsbooster/stages/2020/software/numactl/2.0.13/lib;/p/software/juwelsbooster/stages/2020/software/binutils/2.34-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/zlib/1.2.11-GCCcore-9.3.0/lib;/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib]
+  implicit fwks: []
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_d801e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d801e.dir/build.make CMakeFiles/cmTC_d801e.dir/build
+gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_d801e.dir/testFortranCompilerF90.f90.o
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran    -c /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTC_d801e.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTC_d801e
+/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d801e.dir/link.txt --verbose=1
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran CMakeFiles/cmTC_d801e.dir/testFortranCompilerF90.f90.o -o cmTC_d801e 
+gmake[1]: Leaving directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_a22ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a22ce.dir/build.make CMakeFiles/cmTC_a22ce.dir/build
+gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a22ce.dir/CheckIncludeFile.c.o
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc   -O3 -DNDEBUG -o CMakeFiles/cmTC_a22ce.dir/CheckIncludeFile.c.o -c /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a22ce
+/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a22ce.dir/link.txt --verbose=1
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc -O3 -DNDEBUG CMakeFiles/cmTC_a22ce.dir/CheckIncludeFile.c.o -o cmTC_a22ce 
+gmake[1]: Leaving directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_10b8d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_10b8d.dir/build.make CMakeFiles/cmTC_10b8d.dir/build
+gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10b8d.dir/CheckFunctionExists.c.o
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -O3 -DNDEBUG -o CMakeFiles/cmTC_10b8d.dir/CheckFunctionExists.c.o -c /p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_10b8d
+/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10b8d.dir/link.txt --verbose=1
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -O3 -DNDEBUG CMakeFiles/cmTC_10b8d.dir/CheckFunctionExists.c.o -o cmTC_10b8d  -lpthread 
+gmake[1]: Leaving directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the Fortran sgemm exists passed with the following output:
+Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_bacda/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bacda.dir/build.make CMakeFiles/cmTC_bacda.dir/build
+gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_bacda.dir/testFortranCompiler.f.o
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran   -O3 -DNDEBUG -O3 -c /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTC_bacda.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTC_bacda
+/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bacda.dir/link.txt --verbose=1
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran -O3 -DNDEBUG -O3 CMakeFiles/cmTC_bacda.dir/testFortranCompiler.f.o -o cmTC_bacda  /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64_lin/libmkl_gf_lp64.so /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64_lin/libmkl_gnu_thread.so /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64_lin/libmkl_core.so /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib64/libgomp.so -lpthread -lm -ldl 
+gmake[1]: Leaving directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the Fortran cheev exists passed with the following output:
+Change Dir: /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1fefe/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1fefe.dir/build.make CMakeFiles/cmTC_1fefe.dir/build
+gmake[1]: Entering directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_1fefe.dir/testFortranCompiler.f.o
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran   -O3 -DNDEBUG -O3 -c /p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTC_1fefe.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTC_1fefe
+/p/software/juwelsbooster/stages/2020/software/CMake/3.18.0-GCCcore-9.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fefe.dir/link.txt --verbose=1
+/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran -O3 -DNDEBUG -O3 CMakeFiles/cmTC_1fefe.dir/testFortranCompiler.f.o -o cmTC_1fefe  /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64_lin/libmkl_gf_lp64.so /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64_lin/libmkl_gnu_thread.so /p/software/juwelsbooster/stages/2020/software/imkl/2020.2.254-gpsmpi-2020/mkl/lib/intel64_lin/libmkl_core.so /p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/lib64/libgomp.so -lpthread -lm -ldl -lpthread -lm -ldl 
+gmake[1]: Leaving directory '/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/CMakeTmp'
+
+
+

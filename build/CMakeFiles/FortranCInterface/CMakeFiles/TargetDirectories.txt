@@ -1,0 +1,5 @@
+/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/FortranCInterface/CMakeFiles/rebuild_cache.dir
+/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/FortranCInterface/CMakeFiles/FortranCInterface.dir
+/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/FortranCInterface/CMakeFiles/myfort.dir
+/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/FortranCInterface/CMakeFiles/edit_cache.dir
+/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/FortranCInterface/CMakeFiles/symbols.dir

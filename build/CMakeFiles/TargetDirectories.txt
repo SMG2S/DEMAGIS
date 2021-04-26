@@ -1,0 +1,5 @@
+/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/rebuild_cache.dir
+/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/matgen.exe.dir
+/p/project/cslai/wu/codes/Artificial_matrices/build/CMakeFiles/edit_cache.dir
+/p/project/cslai/wu/codes/Artificial_matrices/build/wrappers/CMakeFiles/rebuild_cache.dir
+/p/project/cslai/wu/codes/Artificial_matrices/build/wrappers/CMakeFiles/edit_cache.dir
