@@ -7,7 +7,7 @@
 #include "fortran_mangle.h"
 
 template <>
-void t_latms(const CBLAS_LAYOUT Layout, const std::size_t m, const std::size_t n,
+void t_latms(const std::size_t m, const std::size_t n,
              const char dist, std::size_t* iseed, char sym, float *d, const std::size_t mode,
              const float cond, const float dmax, const std::size_t kl, const std::size_t ku,
              char pack, float* a, const std::size_t lda){
@@ -42,7 +42,7 @@ void t_latms(const CBLAS_LAYOUT Layout, const std::size_t m, const std::size_t n
 }
 
 template <>
-void t_latms(const CBLAS_LAYOUT Layout, const std::size_t m, const std::size_t n,
+void t_latms(const std::size_t m, const std::size_t n,
              const char dist, std::size_t* iseed, char sym, double *d, const std::size_t mode,
              const double cond, const double dmax, const std::size_t kl, const std::size_t ku,
              char pack, double* a, const std::size_t lda){
@@ -78,7 +78,7 @@ void t_latms(const CBLAS_LAYOUT Layout, const std::size_t m, const std::size_t n
 
 
 template <>
-void t_latms(const CBLAS_LAYOUT Layout, const std::size_t m, const std::size_t n,
+void t_latms(const std::size_t m, const std::size_t n,
              const char dist, std::size_t* iseed, char sym, float *d, const std::size_t mode,
              const float cond, float dmax, const std::size_t kl, const std::size_t ku,
              char pack, std::complex<float>* a, const std::size_t lda){
@@ -113,7 +113,7 @@ void t_latms(const CBLAS_LAYOUT Layout, const std::size_t m, const std::size_t n
 }
 
 template <>
-void t_latms(const CBLAS_LAYOUT Layout, const std::size_t m, const std::size_t n,
+void t_latms(const std::size_t m, const std::size_t n,
              const char dist, std::size_t* iseed, char sym, double *d, const std::size_t mode,
              const double cond, const double dmax, const std::size_t kl, const std::size_t ku,
              char pack, std::complex<double>* a, const std::size_t lda){
