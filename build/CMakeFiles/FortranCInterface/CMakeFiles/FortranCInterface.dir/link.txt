@@ -1,1 +1,0 @@
-/p/software/juwelsbooster/stages/2020/software/GCCcore/9.3.0/bin/gfortran -O3 -DNDEBUG -O3 CMakeFiles/FortranCInterface.dir/main.F.o CMakeFiles/FortranCInterface.dir/call_sub.f.o CMakeFiles/FortranCInterface.dir/call_mod.f90.o -o FortranCInterface  libsymbols.a libmyfort.a 
