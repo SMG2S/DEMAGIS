@@ -1,6 +1,7 @@
 #include <chrono>
 #include <boost/program_options.hpp>
 #include "./include/io.hpp"
+#include "./include/myDist.hpp"
 #include "./wrappers/blas_templates.hpp"
 
 template<typename T>
@@ -18,7 +19,7 @@ void showMatrix(T *mat, std::size_t m, std::size_t n, std::size_t lda){
 	    std::cout << std::endl;
 	}
 }
-
+/*
 template<typename T>
 void myUniformDist(Base<T>* &eigenv, std::size_t n, Base<T> epsilon, Base<T> dmax){
   for(auto k = 0; k < n; k++){
@@ -33,7 +34,7 @@ void myGeometricDist(Base<T>* &eigenv, std::size_t n, Base<T> epsilon){
     eigenv[k] = std::pow(epsilon, exp);
   }
 }
-
+*/
 
 namespace po = boost::program_options;
 
