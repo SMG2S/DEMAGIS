@@ -112,7 +112,7 @@ int main(int argc, char* argv[]){
   DESC   desc;
   int    info;
 
-  descinit( desc, &N, &N, &mbsize, &nbsize, &irsrc, &irsrc, &ictxt, &lld_loc, &info );
+  descinit( desc, &N, &N, &mbsize, &nbsize, &i_zero, &i_zero, &ictxt, &lld_loc, &info );
 
   //generating ...
   if(myproc == 0) std::cout << "]> start generating ..." << std::endl;
@@ -128,12 +128,30 @@ int main(int argc, char* argv[]){
 
   std::mt19937 generator(131421);
   std::normal_distribution<double> distribution(mean,stddev);
-  
+ 
+  std::vector<std::size_t> g_offs_r;
+  std::vector<std::size_t> g_offs_c;  
+
+  g_offs_r.push_back(0);
+  g_offs_c.push_back(0);
+
+  std::size_t r = 0, c = 0;
+  for(auto i = 0; i < dim0 - 1; i++){
+    r += numroc( &N, &mbsize, &i, &irsrc, &dim0 );
+    g_offs_r.push_back(r);
+  }
+
+  for(auto j = 0; j < dim1 - 1; j++){
+    c += numroc( &N, &nbsize, &j, &icsrc, &dim1 );
+    g_offs_c.push_back(c);
+  }
+
   int cnt = 0;
   for(auto j = 0; j < N; j++){
     for(auto i = 0; i < N; i++){
-      if((i >= r_offs[i]) && (i < (r_offs[i] + N_loc_r)) && (j >= c_offs[i]) && (j < (c_offs[i] + N_loc_c))){
-	M_loc[cnt] = distribution(generator);
+      auto rnd = distribution(generator);
+      if((i >= g_offs_r[myrow]) && (i < (g_offs_r[myrow] + N_loc_r)) && (j >= g_offs_c[mycol]) && (j < (g_offs_c[mycol] + N_loc_c))){
+	M_loc[cnt] = rnd;
         cnt++;	
       }
     }
