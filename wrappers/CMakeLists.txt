@@ -9,12 +9,14 @@ list(APPEND includePath ${CMAKE_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
 
 find_package( BLAS   REQUIRED )
 find_package( LAPACK   REQUIRED )
+find_package( SCALAPACK REQUIRED)
 
 add_library( blas_lapack_comm INTERFACE )
 
 target_link_libraries( blas_lapack_comm INTERFACE
-  ${BLAS_LIBRARIES}
-  ${LAPACK_LIBRARIES}
+  BLAS::BLAS
+  LAPACK::LAPACK
+  SCALAPACK::SCALAPACK
 )
 
 target_include_directories( blas_lapack_comm INTERFACE
