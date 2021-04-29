@@ -19,22 +19,6 @@ void showMatrix(T *mat, std::size_t m, std::size_t n, std::size_t lda){
 	    std::cout << std::endl;
 	}
 }
-/*
-template<typename T>
-void myUniformDist(Base<T>* &eigenv, std::size_t n, Base<T> epsilon, Base<T> dmax){
-  for(auto k = 0; k < n; k++){
-    eigenv[k] = dmax * (epsilon + (Base<T>)k * (1.0 - epsilon) / (Base<T>)n);
-  }
-}
-
-template<typename T>
-void myGeometricDist(Base<T>* &eigenv, std::size_t n, Base<T> epsilon){
-  for(auto k = 0; k < n; k++){
-    Base<T> exp = (Base<T>)(n - k) / (Base<T>)n; 
-    eigenv[k] = std::pow(epsilon, exp);
-  }
-}
-*/
 
 namespace po = boost::program_options;
 
