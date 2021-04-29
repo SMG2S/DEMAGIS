@@ -26,10 +26,10 @@ std::pair<std::size_t, std::size_t> numroc(std::size_t n, std::size_t nb, int ip
 
 void get_offs_lens(std::size_t N_, std::size_t mb_, std::size_t nb_, int dim0, int dim1, int myrow, int mycol,
                    std::size_t mblocks_, std::size_t nblocks_, std::size_t irsrc_,
-                   std::size_t icsrc_, std::size_t* &r_offs, std::size_t* &r_lens,
-                   std::size_t* &r_offs_l, std::size_t* &c_offs, std::size_t* &c_lens, std::size_t* &c_offs_l)
+                   std::size_t icsrc_, std::size_t* &r_offs_, std::size_t* &r_lens_,
+                   std::size_t* &r_offs_l_, std::size_t* &c_offs_, std::size_t* &c_lens_, std::size_t* &c_offs_l_)
 {
-
+/*
   std::unique_ptr<std::size_t[]> r_offs_;
   std::unique_ptr<std::size_t[]> r_lens_;
   std::unique_ptr<std::size_t[]> r_offs_l_;
@@ -43,7 +43,7 @@ void get_offs_lens(std::size_t N_, std::size_t mb_, std::size_t nb_, int dim0, i
   c_offs_.reset(new std::size_t[nblocks_]());
   c_lens_.reset(new std::size_t[nblocks_]());
   c_offs_l_.reset(new std::size_t[nblocks_]());
-
+*/
 
   std::size_t sendr = irsrc_;
   std::size_t sendc = icsrc_;
@@ -88,14 +88,14 @@ void get_offs_lens(std::size_t N_, std::size_t mb_, std::size_t nb_, int dim0, i
   for(std::size_t j = 1; j < nblocks_; j++){
     c_offs_l_[j] = c_offs_l_[j - 1] + c_lens_[j - 1];
   }
-
+/*
   r_offs = r_offs_.get();
   r_lens = r_lens_.get();
   r_offs_l = r_offs_l_.get();
   c_offs = c_offs_.get();
   c_lens = c_lens_.get();
   c_offs_l = c_offs_l_.get();
-
+*/
 }
 
 

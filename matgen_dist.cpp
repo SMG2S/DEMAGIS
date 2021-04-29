@@ -12,29 +12,61 @@ const std::size_t sze_one = 1;
 
 typedef std::size_t DESC[ 9 ];
 
+namespace po = boost::program_options;
+
 int main(int argc, char* argv[]){
 
   MPI_Init(&argc, &argv);
 
+  po::options_description descp("Artificial Matrices with ScaLAPACK: Options");
+
+  descp.add_options()
+       ("help,h","show the help")
+       ("N", po::value<std::size_t>()->default_value(10), "number of row and column of matrices to be generated.")
+       ("dim0", po::value<int>()->default_value(1), "first dimension of 2D MPI cartesian grid.")    
+       ("dim1", po::value<int>()->default_value(1), "second dimension of 2D MPI cartesian grid.")       
+       ("mbsize", po::value<std::size_t>()->default_value(5), "ScaLAPACK block size in the first dimension of 2D MPI cartesian grid.")
+       ("nbsize", po::value<std::size_t>()->default_value(5), "ScaLAPACK block size in the second dimension of 2D MPI cartesian grid.")
+       ("dmax", po::value<double>()->default_value(21), "A scalar which scales the generated eigenvalues, this makes"
+							 " the maximum absolute eigenvalue is abs(dmax)." )
+       ("epsilon", po::value<double>()->default_value(0.1), "This value is epsilon." ) 
+       ("dist", po::value<std::size_t>()->default_value(0), "Specifies my externel setup distribution for generating eigenvalues:\n "
+							      "0: Uniform eigenspectrum lambda_k = dmax * (epsilon + k * (1 - epsilon) / n for k = 0, ..., n-1)\n "
+                                                              "1: Geometric eigenspectrum lambda_k =lambda_k = epsilon^[(n - k) / n] for k = 0, ..., n-1) \n")
+       ("mean", po::value<double>()->default_value(5.0), "Mean value of Normal distribution for the randomness." )
+       ("stddev", po::value<double>()->default_value(2.0), "Standard deviation value of Normal distribution for the randomness." )
+  ;  
+
+  po::variables_map vm;
+  po::store(po::parse_command_line(argc, argv, descp), vm);
+
+  if (vm.count("help")) {
+    std::cout << descp << std::endl;
+    return 1;
+  }
+  
   //will be parsered by boost
   //2D dimmension of MPI grid
-  int dim0=1, dim1=1;
+  int dim0 = vm["dim0"].as<int>();
+  int dim1 = vm["dim1"].as<int>();  
   //size of matrix to be generated
-  std::size_t N = 100;
+  std::size_t N = vm["N"].as<std::size_t>();
   //block size of scalapack
-  std::size_t mbsize = 10;
-  std::size_t nbsize = 10;
+  std::size_t mbsize = vm["mbsize"].as<std::size_t>();
+  std::size_t nbsize = vm["nbsize"].as<std::size_t>();
   //for the randomness with normal distribution
-  double mean = 5.0;
-  double stddev = 2.0;
+  double mean = vm["mean"].as<double>();
+  double stddev = vm["stddev"].as<double>();
+  double dmax = vm["dmax"].as<double>();
+  double eps = vm["epsilon"].as<double>();
+  std::size_t dist = vm["dist"].as<std::size_t>();
 
+  //BLACS part to setup the grid  
   int irsrc = i_zero;
   int icsrc = i_zero;
-
-  //BLACS part to setup the grid
   int myproc, nprocs;
   blacs_pinfo( &myproc, &nprocs );
-  std::cout << "mprocs: " << myproc << ", nprocs: " << nprocs << std::endl; 
+  //std::cout << "mprocs: " << myproc << ", nprocs: " << nprocs << std::endl; 
   int ictxt;
   int val;
   blacs_get( &ictxt, &i_zero, &val );
@@ -50,11 +82,18 @@ int main(int argc, char* argv[]){
   //for column major matrix, the leading dimension
   std::size_t lld_loc = std::max(N_loc_r, (std::size_t)1);
 
-  std::size_t *r_offs, *c_offs, *r_lens, *c_lens, *r_offs_l, *c_offs_l;
+  std::size_t *r_offs = new std::size_t[blocknb_r];
+  std::size_t *r_lens = new std::size_t[blocknb_r];
+  std::size_t *r_offs_l = new std::size_t[blocknb_r];
+
+  std::size_t *c_offs = new std::size_t[blocknb_c];
+  std::size_t *c_lens = new std::size_t[blocknb_c];
+  std::size_t *c_offs_l = new std::size_t[blocknb_c];
+
   get_offs_lens(N, mbsize, nbsize, dim0, dim1, myrow, mycol, blocknb_r, 
 		blocknb_c, irsrc, icsrc, r_offs, r_lens, r_offs_l, c_offs, 
 		c_lens, c_offs_l);
-
+/*
   for(std::size_t i = 0; i < blocknb_r; i++){
       for(std::size_t j = 0; j < blocknb_c; j++){
           std::cout << "[" << myrow << "," 
@@ -68,29 +107,35 @@ int main(int argc, char* argv[]){
 	  << std::endl;
     }
   }
-  
+*/
   //construct scalapack matrix descriptor 
   DESC   desc;
   int    info;
 
   descinit( desc, &N, &N, &mbsize, &nbsize, &irsrc, &irsrc, &ictxt, &lld_loc, &info );
 
+  //generating ...
+  if(myproc == 0) std::cout << "]> start generating ..." << std::endl;
+
+  std::chrono::high_resolution_clock::time_point start, end;
+  std::chrono::duration<double> elapsed;
+
+  start = std::chrono::high_resolution_clock::now();
+
   //initialisation of a random matrix M
   auto M_loc_ptr = std::unique_ptr<double[]>(new double[N_loc_r * N_loc_c]);
   double *M_loc = M_loc_ptr.get();
 
-  // seed sequence for random generation
-  std::seed_seq seq{1,2,3,4,5};
-  std::vector<std::uint32_t> seeds(nprocs);
-  seq.generate(seeds.begin(), seeds.end());
-
-  std::mt19937 generator(seeds[myproc]);
+  std::mt19937 generator(131421);
   std::normal_distribution<double> distribution(mean,stddev);
-
-  //this part will be replaced by the random generation later
-  for(auto i = 0; i < N_loc_r; i++){
-    for(auto j = 0; j < N_loc_c; j++){
-      M_loc[i + j * lld_loc] = distribution(generator);
+  
+  int cnt = 0;
+  for(auto j = 0; j < N; j++){
+    for(auto i = 0; i < N; i++){
+      if((i >= r_offs[i]) && (i < (r_offs[i] + N_loc_r)) && (j >= c_offs[i]) && (j < (c_offs[i] + N_loc_c))){
+	M_loc[cnt] = distribution(generator);
+        cnt++;	
+      }
     }
   }
 
@@ -107,16 +152,20 @@ int main(int argc, char* argv[]){
   //Array of size m to store generated eigenvalues
   double *d = new double[N];
 
-  myUniformDist<double>(d, N, 0.1, 10);
-/*
+  if(dist == 0){
+    myUniformDist<double>(d, N, eps, dmax);
+  }else{
+    myGeometricDist<double>(d, N, eps);
+  }
+
   for(std::size_t j = 0; j < blocknb_c; j++){
     for(std::size_t i = 0; i < blocknb_r; i++){
       for(std::size_t q = 0; q < c_lens[j]; q++){
         for(std::size_t p = 0; p < r_lens[i]; p++){
 	  if(q + c_offs[j] == p + r_offs[i]){
-	    //A_loc[(q + c_offs_l[j]) * N_loc_r + p + r_offs_l[i]] = 1.0; //d[q + c_offs[j]];
+	    A_loc[(q + c_offs_l[j]) * N_loc_r + p + r_offs_l[i]] = d[q + c_offs[j]];
 	  }else{
-	    //A_loc[(q + c_offs_l[j]) * N_loc_r + p + r_offs_l[i]] = 0.0;
+	    A_loc[(q + c_offs_l[j]) * N_loc_r + p + r_offs_l[i]] = 0.0;
 	  }
 	}
       }
@@ -127,7 +176,13 @@ int main(int argc, char* argv[]){
   t_pmqr<double>('L','N', N, N, N, M_loc, sze_one, sze_one, desc, tau.data(), A_loc, sze_one, sze_one, desc);
 
   t_pmqr<double>('R','T', N, N, N, M_loc, sze_one, sze_one, desc, tau.data(), A_loc, sze_one, sze_one, desc);
-*/
+
+  end = std::chrono::high_resolution_clock::now();
+
+  elapsed = std::chrono::duration_cast<std::chrono::duration<double>>(end - start);
+  
+  if(myproc == 0) std::cout << "]> matrix generated in " << elapsed.count() << " seconds" << std::endl;
+  
   //Write generated matrix A into binary file.
   
   MPI_Finalize();	
