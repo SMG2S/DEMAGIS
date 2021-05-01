@@ -4,6 +4,13 @@
 #include "./types.hpp"
 
 template <typename T>
+std::size_t t_geqrf(std::size_t m, std::size_t n, T* a, std::size_t lda, T* tau);
+
+template <typename T>
+std::size_t t_mqr(const char side, const char trans, std::size_t m, std::size_t n,  std::size_t k, T* a, std::size_t lda,
+		  T *tau, T *c, std::size_t ldc);
+
+template <typename T>
 void t_latms(const std::size_t m, const std::size_t n,
 	     const char dist, std::size_t* iseed, char sym, Base<T> *d, const std::size_t mode,
 	     const Base<T> cond, const Base<T> dmax, const std::size_t kl, const std::size_t ku,

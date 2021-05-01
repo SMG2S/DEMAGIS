@@ -7,6 +7,235 @@
 #include "fortran_mangle.h"
 
 template <>
+std::size_t t_geqrf(std::size_t m, std::size_t n, double* a,
+        std::size_t lda, double* tau)
+{
+//return LAPACKE_dgeqrf(matrix_layout, m, n, a, lda, tau);
+  using T = std::remove_reference<decltype((a[0]))>::type;
+
+  BlasInt m_ = m;
+  BlasInt n_ = n;
+  BlasInt lda_ = lda;
+
+  T* work;
+  T numwork;
+  BlasInt lwork, info;
+
+  lwork = -1;
+  FC_GLOBAL(dgeqrf,DGEQRF)(&m_, &n_, a, &lda_, tau, &numwork, &lwork, &info);
+  assert(info == 0);
+
+  lwork = static_cast<std::size_t>((numwork));
+  auto ptr = std::unique_ptr<T[]> {
+    new T[ lwork ]
+  };
+  work = ptr.get();
+
+  FC_GLOBAL(dgeqrf,DGEQRF)(&m_, &n_, a, &lda_, tau, work, &lwork, &info);
+  assert(info == 0);
+  return info;
+}
+template <>
+std::size_t t_geqrf(std::size_t m, std::size_t n, float* a,
+        std::size_t lda, float* tau)
+{
+  //return LAPACKE_sgeqrf(matrix_layout, m, n, a, lda, tau);
+  using T = std::remove_reference<decltype((a[0]))>::type;
+
+  BlasInt m_ = m;
+  BlasInt n_ = n;
+  BlasInt lda_ = lda;
+
+  T* work;
+  T numwork;
+  BlasInt lwork, info;
+
+  lwork = -1;
+  FC_GLOBAL(sgeqrf,SGEQRF)(&m_, &n_, a, &lda_, tau, &numwork, &lwork, &info);
+  assert(info == 0);
+
+  lwork = static_cast<std::size_t>((numwork));
+  auto ptr = std::unique_ptr<T[]> {
+    new T[ lwork ]
+  };
+  work = ptr.get();
+
+  FC_GLOBAL(sgeqrf,SGEQRF)(&m_, &n_, a, &lda_, tau, work, &lwork, &info);
+  assert(info == 0);
+  return info;
+}
+
+template <>
+std::size_t t_geqrf(std::size_t m, std::size_t n,
+                    std::complex<double>* a, std::size_t lda,
+                    std::complex<double>* tau) {
+  // return LAPACKE_zgeqrf(matrix_layout, m, n, a, lda, tau);
+
+  using T = std::remove_reference<decltype((a[0]))>::type;
+
+  BlasInt m_ = m;
+  BlasInt n_ = n;
+  BlasInt lda_ = lda;
+
+  T* work;
+  T numwork;
+  BlasInt lwork, info;
+
+  lwork = -1;
+  FC_GLOBAL(zgeqrf, ZGEQRF)(&m_, &n_, a, &lda_, tau, &numwork, &lwork, &info);
+  assert(info == 0);
+
+  lwork = static_cast<std::size_t>(real(numwork));
+  auto ptr = std::unique_ptr<T[]>{new T[lwork]};
+  work = ptr.get();
+
+  FC_GLOBAL(zgeqrf, ZGEQRF)(&m_, &n_, a, &lda_, tau, work, &lwork, &info);
+  assert(info == 0);
+  return info;
+}
+
+template <>
+std::size_t t_geqrf(std::size_t m, std::size_t n,
+                    std::complex<float>* a, std::size_t lda,
+                    std::complex<float>* tau) {
+  using T = std::remove_reference<decltype((a[0]))>::type;
+
+  //  return LAPACKE_cgeqrf(matrix_layout, m, n, a, lda, tau);
+  BlasInt m_ = m;
+  BlasInt n_ = n;
+  BlasInt lda_ = lda;
+
+  T* work;
+  T numwork;
+  BlasInt lwork, info;
+
+  lwork = -1;
+  FC_GLOBAL(cgeqrf, CGEQRF)(&m_, &n_, a, &lda_, tau, &numwork, &lwork, &info);
+  assert(info == 0);
+
+  lwork = static_cast<std::size_t>(real(numwork));
+  auto ptr = std::unique_ptr<T[]>{new T[lwork]};
+  work = ptr.get();
+
+  FC_GLOBAL(cgeqrf, CGEQRF)(&m_, &n_, a, &lda_, tau, work, &lwork, &info);
+  assert(info == 0);
+  return info;
+}
+
+template <>
+std::size_t t_mqr(char side, char trans, std::size_t m, std::size_t n,  std::size_t k, float* a, std::size_t lda,
+                  float *tau, float *c, std::size_t ldc){
+  using T = std::remove_reference<decltype((c[0]))>::type;
+
+  BlasInt m_ = m;
+  BlasInt n_ = n;
+  BlasInt k_ = k;  
+  BlasInt lda_ = lda;  
+  BlasInt ldc_ = ldc;  
+
+  T* work;
+  T numwork;
+  BlasInt lwork, info;
+
+  lwork = -1;
+  FC_GLOBAL(sormqr, SORMQR)(&side, &trans, &m_, &n_, &k_, a, &lda_, tau, c, &ldc_, &numwork, &lwork, &info);  
+  assert(info == 0);
+
+  lwork = static_cast<std::size_t>((numwork));
+  auto ptr = std::unique_ptr<T[]>{new T[lwork]};
+  work = ptr.get();
+
+  FC_GLOBAL(sormqr, SORMQR)(&side, &trans, &m_, &n_, &k_, a, &lda_, tau, c, &ldc_, work, &lwork, &info);  
+  assert(info == 0);
+  return info;
+}
+
+template <>
+std::size_t t_mqr(char side, char trans, std::size_t m, std::size_t n,  std::size_t k, double* a, std::size_t lda,
+                  double *tau, double *c, std::size_t ldc){
+  using T = std::remove_reference<decltype((c[0]))>::type;
+
+  BlasInt m_ = m;
+  BlasInt n_ = n;
+  BlasInt k_ = k;
+  BlasInt lda_ = lda;
+  BlasInt ldc_ = ldc;
+
+  T* work;
+  T numwork;
+  BlasInt lwork, info;
+
+  lwork = -1;
+  FC_GLOBAL(dormqr, DORMQR)(&side, &trans, &m_, &n_, &k_, a, &lda_, tau, c, &ldc_, &numwork, &lwork, &info);
+  assert(info == 0);
+
+  lwork = static_cast<std::size_t>((numwork));
+  auto ptr = std::unique_ptr<T[]>{new T[lwork]};
+  work = ptr.get();
+
+  FC_GLOBAL(dormqr, DORMQR)(&side, &trans, &m_, &n_, &k_, a, &lda_, tau, c, &ldc_, work, &lwork, &info);
+  assert(info == 0);
+  return info;
+}
+
+template <>
+std::size_t t_mqr(char side, char trans, std::size_t m, std::size_t n,  std::size_t k, std::complex<float>* a, std::size_t lda,
+                  std::complex<float> *tau, std::complex<float> *c, std::size_t ldc){
+  using T = std::remove_reference<decltype((c[0]))>::type;
+
+  BlasInt m_ = m;
+  BlasInt n_ = n;
+  BlasInt k_ = k;
+  BlasInt lda_ = lda;
+  BlasInt ldc_ = ldc;
+
+  T* work;
+  T numwork;
+  BlasInt lwork, info;
+
+  lwork = -1;
+  FC_GLOBAL(cunmqr, CUNMQR)(&side, &trans, &m_, &n_, &k_, a, &lda_, tau, c, &ldc_, &numwork, &lwork, &info);
+  assert(info == 0);
+
+  lwork = static_cast<std::size_t>(real(numwork));
+  auto ptr = std::unique_ptr<T[]>{new T[lwork]};
+  work = ptr.get();
+
+  FC_GLOBAL(cunmqr, CUNMQR)(&side, &trans, &m_, &n_, &k_, a, &lda_, tau, c, &ldc_, work, &lwork, &info);
+  assert(info == 0);
+  return info;
+}
+
+template <>
+std::size_t t_mqr(char side, char trans, std::size_t m, std::size_t n,  std::size_t k, std::complex<double>* a, std::size_t lda,
+                  std::complex<double> *tau, std::complex<double> *c, std::size_t ldc){
+  using T = std::remove_reference<decltype((c[0]))>::type;
+
+  BlasInt m_ = m;
+  BlasInt n_ = n;
+  BlasInt k_ = k;
+  BlasInt lda_ = lda;
+  BlasInt ldc_ = ldc;
+
+  T* work;
+  T numwork;
+  BlasInt lwork, info;
+
+  lwork = -1;
+  FC_GLOBAL(zunmqr, ZUNMQR)(&side, &trans, &m_, &n_, &k_, a, &lda_, tau, c, &ldc_, &numwork, &lwork, &info);
+  assert(info == 0);
+
+  lwork = static_cast<std::size_t>(real(numwork));
+  auto ptr = std::unique_ptr<T[]>{new T[lwork]};
+  work = ptr.get();
+
+  FC_GLOBAL(zunmqr, ZUNMQR)(&side, &trans, &m_, &n_, &k_, a, &lda_, tau, c, &ldc_, work, &lwork, &info);
+  assert(info == 0);
+  return info;
+}
+
+
+template <>
 void t_latms(const std::size_t m, const std::size_t n,
              const char dist, std::size_t* iseed, char sym, float *d, const std::size_t mode,
              const float cond, const float dmax, const std::size_t kl, const std::size_t ku,
