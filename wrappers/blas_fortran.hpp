@@ -9,7 +9,55 @@ using scomplex = std::complex<float>;
 
 extern "C" {
 
-		
+	
+void FC_GLOBAL(sgeqrf, SGEQRF)(const BlasInt* m, const BlasInt* n, float* a,
+                               const BlasInt* lda, float* tau, float* work,
+                               const BlasInt* lwork, BlasInt* info);
+void FC_GLOBAL(dgeqrf, DGEQRF)(const BlasInt* m, const BlasInt* n, double* a,
+                               const BlasInt* lda, double* tau, double* work,
+                               const BlasInt* lwork, BlasInt* info);
+void FC_GLOBAL(cgeqrf, CGEQRF)(const BlasInt* m, const BlasInt* n, scomplex* a,
+                               const BlasInt* lda, scomplex* tau,
+                               scomplex* work, const BlasInt* lwork,
+                               BlasInt* info);
+void FC_GLOBAL(zgeqrf, ZGEQRF)(const BlasInt* m, const BlasInt* n, dcomplex* a,
+                               const BlasInt* lda, dcomplex* tau,
+                               dcomplex* work, const BlasInt* lwork,
+                               BlasInt* info);
+
+
+void FC_GLOBAL(sormqr, SORMQR)(const char* side, const char *trans,
+			       const BlasInt* m, const BlasInt* n, 
+			       const BlasInt* k, const float* a,
+                               const BlasInt* lda, const float* tau, 
+			       float* c, const BlasInt *ldc, 
+			       float* work, const BlasInt* lwork,
+			       BlasInt* info);
+
+void FC_GLOBAL(dormqr, DORMQR)(const char* side, const char *trans,
+                               const BlasInt* m, const BlasInt* n,
+                               const BlasInt* k, const double* a,
+                               const BlasInt* lda, const double* tau,
+                               double* c, const BlasInt *ldc,
+                               double* work, const BlasInt* lwork,
+                               BlasInt* info);
+
+void FC_GLOBAL(cunmqr, CUNMQR)(const char* side, const char *trans,
+                               const BlasInt* m, const BlasInt* n,
+                               const BlasInt* k, const scomplex* a,
+                               const BlasInt* lda, const scomplex* tau,
+                               scomplex* c, const BlasInt *ldc,
+                               scomplex* work, const BlasInt* lwork,
+                               BlasInt* info);
+
+void FC_GLOBAL(zunmqr, ZUNMQR)(const char* side, const char *trans,
+                               const BlasInt* m, const BlasInt* n,
+                               const BlasInt* k, const dcomplex* a,
+                               const BlasInt* lda, const dcomplex* tau,
+                               dcomplex* c, const BlasInt *ldc,
+                               dcomplex* work, const BlasInt* lwork,
+                               BlasInt* info);
+
 void FC_GLOBAL(slatms, SLATMS)(const BlasInt* m,    const BlasInt* n,
 			       const char* dist,    BlasInt* iseed,
 			       const char* sym,     float* d,
