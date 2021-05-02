@@ -180,7 +180,10 @@ int main(int argc, char* argv[]){
   //save matrix into binary file
   wrtMatIntoBinary<double>(A, out_str.str(), n * n);
   
-  delete[] d;
+  if(myDist == 0 || myDist == 1){
+    delete[] d;
+  }
+  
   return 0;
 }
 
