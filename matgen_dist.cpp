@@ -12,6 +12,88 @@ const std::size_t sze_one = 1;
 
 typedef std::size_t DESC[ 9 ];
 
+template<typename T>
+void showMatrix(T *mat, std::size_t m, std::size_t n, std::size_t lda){
+
+        for(std::size_t i = 0; i < m; i ++){
+
+            std::cout << "(" << i << ") " << " : ";
+
+            for(std::size_t j = 0; j < n; j++){
+                std::cout << std::scientific;
+                std::cout << std::right << std::setw(16) << mat[i + j * lda] << "    ";
+
+            }
+            std::cout << std::endl;
+        }
+}
+
+//gather block-cyclic matrix to rank 0
+void GatherMatrix(int ctxt, int M, int N, int Mb, int Nb, int nrows, int ncols, double *A_loc, double *A_glob){
+
+    int iam, nprocs;
+    int procrows, proccols;
+    int myrow, mycol;
+    MPI_Datatype type1, type2;
+
+    int TAG = 3;
+    MPI_Status status;
+
+    blacs_pinfo( &iam, &nprocs );
+
+    int sendr = 0, sendc = 0, recvr = 0, recvc = 0;
+
+    blacs_gridinfo( &ctxt, &procrows, &proccols, &myrow, &mycol);
+
+    for (int r = 0; r < M; r += Mb, sendr = (sendr + 1) % procrows) {
+
+        sendc = 0;
+
+        int nr = Mb;
+
+        if (M - r < Mb){
+        
+            nr = M - r;
+	
+	}
+        
+        for (int c = 0; c < N; c += Nb, sendc = (sendc + 1) % proccols){
+
+	    int nc = Nb;
+
+            if (N-c < Nb){
+
+                nc = N - c;
+
+	    }
+
+            MPI_Type_vector(nc, nr, M, MPI_DOUBLE,&type1);
+            MPI_Type_commit(&type1);
+            MPI_Type_vector(nc, nr, nrows, MPI_DOUBLE,&type2);
+            MPI_Type_commit(&type2);
+
+            if (myrow == sendr && mycol == sendc) {
+
+                MPI_Send(A_loc + nrows * recvc + recvr, 1, type2, 0, TAG, MPI_COMM_WORLD);
+
+                recvc = (recvc+nc)%ncols;
+            }
+
+            if (myrow == 0 && mycol == 0) {
+
+                MPI_Recv(A_glob + M * c + r, 1, type1, sendr + sendc * procrows, TAG, MPI_COMM_WORLD, &status);
+            }
+
+        }
+
+	if (myrow == sendr){
+         
+	   recvr = (recvr+nr)%nrows;
+
+	}
+    }
+}
+
 namespace po = boost::program_options;
 
 int main(int argc, char* argv[]){
@@ -21,20 +103,21 @@ int main(int argc, char* argv[]){
   po::options_description descp("Artificial Matrices with ScaLAPACK: Options");
 
   descp.add_options()
-       ("help,h","show the help")
+       ("help,h","show the help"
+		 "Attention, for the current implementation of parallel IO, please make sure N/mbsize/dim0 == 0 and N/bbsize/dim1 == 0")
        ("N", po::value<std::size_t>()->default_value(10), "number of row and column of matrices to be generated.")
        ("dim0", po::value<int>()->default_value(1), "first dimension of 2D MPI cartesian grid.")    
        ("dim1", po::value<int>()->default_value(1), "second dimension of 2D MPI cartesian grid.")       
        ("mbsize", po::value<std::size_t>()->default_value(5), "ScaLAPACK block size in the first dimension of 2D MPI cartesian grid.")
        ("nbsize", po::value<std::size_t>()->default_value(5), "ScaLAPACK block size in the second dimension of 2D MPI cartesian grid.")
-       ("dmax", po::value<double>()->default_value(21), "A scalar which scales the generated eigenvalues, this makes"
+       ("dmax", po::value<double>()->default_value(1), "A scalar which scales the generated eigenvalues, this makes"
 							 " the maximum absolute eigenvalue is abs(dmax)." )
        ("epsilon", po::value<double>()->default_value(0.1), "This value is epsilon." ) 
-       ("dist", po::value<std::size_t>()->default_value(0), "Specifies my externel setup distribution for generating eigenvalues:\n "
+       ("myDist", po::value<std::size_t>()->default_value(0), "Specifies my externel setup distribution for generating eigenvalues:\n "
 							      "0: Uniform eigenspectrum lambda_k = dmax * (epsilon + k * (1 - epsilon) / n for k = 0, ..., n-1)\n "
                                                               "1: Geometric eigenspectrum lambda_k =lambda_k = epsilon^[(n - k) / n] for k = 0, ..., n-1) \n")
-       ("mean", po::value<double>()->default_value(5.0), "Mean value of Normal distribution for the randomness." )
-       ("stddev", po::value<double>()->default_value(2.0), "Standard deviation value of Normal distribution for the randomness." )
+       ("mean", po::value<double>()->default_value(0.5), "Mean value of Normal distribution for the randomness." )
+       ("stddev", po::value<double>()->default_value(1.0), "Standard deviation value of Normal distribution for the randomness." )
   ;  
 
   po::variables_map vm;
@@ -59,7 +142,17 @@ int main(int argc, char* argv[]){
   double stddev = vm["stddev"].as<double>();
   double dmax = vm["dmax"].as<double>();
   double eps = vm["epsilon"].as<double>();
-  std::size_t dist = vm["dist"].as<std::size_t>();
+  std::size_t dist = vm["myDist"].as<std::size_t>();
+
+  int b0 = N / mbsize; 
+  int b1 = N / nbsize;
+
+  if(N % mbsize + N % nbsize + b0 % dim0 + b1 % dim1 != 0 ){
+    std::cout << "Attention:\ndue to the simplication of implementation of parallel IO,\n"
+		<< "N should be divisible by mbsize and nbsize\n"
+		<<"N/mbsize and N / nbsize should be divisible by dim0 and dim1, respectively" << std::endl;
+    return 1;
+  }
 
   //BLACS part to setup the grid  
   int irsrc = i_zero;
@@ -166,6 +259,20 @@ int main(int argc, char* argv[]){
   auto A_loc_ptr = std::unique_ptr<double[]>(new double[N_loc_r * N_loc_c]);  
   double *A_loc = A_loc_ptr.get();
 
+  std::string mode;
+
+  if(dist == 0){
+    mode= "Uniform";
+  }else if(dist == 1){
+    mode = "Geometric";
+  }
+  /*else if(myDist == 2){
+    mode = "1-2-1";
+  }else if(myDist == 3){
+    mode = "Wilkinson";
+  }
+  */
+
   //set the diagonal of A by given eigenvalues
   //Array of size m to store generated eigenvalues
   double *d = new double[N];
@@ -202,7 +309,92 @@ int main(int argc, char* argv[]){
   if(myproc == 0) std::cout << "]> matrix generated in " << elapsed.count() << " seconds" << std::endl;
   
   //Write generated matrix A into binary file.
+  MPI_File fh;
+  MPI_Status status;
+ 
+  std::ostringstream out_str;
+
+  out_str << std::scientific << "matgen_m_" << N << "_" << mode << "_eps_"<< eps
+            << ".bin";
+ 
+  int handle;
+
+  handle = MPI_File_open(MPI_COMM_WORLD, out_str.str().c_str(),
+                  MPI_MODE_CREATE | MPI_MODE_WRONLY,
+                  MPI_INFO_NULL, &fh);
+
+  MPI_Datatype file_type;
+  MPI_Datatype memory_type;
+
+  start = std::chrono::high_resolution_clock::now();
+
+  for(std::size_t j = 0; j < blocknb_c; j++){
+    for(std::size_t i = 0; i < blocknb_r; i++){
+
+      MPI_Type_vector(c_lens[j], r_lens[i], N, MPI_DOUBLE, &file_type);
+      MPI_Type_commit(&file_type);
+
+      MPI_Type_vector(c_lens[j], r_lens[i], N_loc_r, MPI_DOUBLE, &memory_type);
+      MPI_Type_commit(&memory_type);
+
+      MPI_Offset offset;
+      offset = (r_offs[i] + c_offs[j] * N) * sizeof(double);
+
+      MPI_File_set_view(fh, offset, MPI_DOUBLE, file_type, "native", MPI_INFO_NULL);
+      MPI_File_write_all(fh, A_loc + r_offs_l[i] + c_offs_l[j] * N_loc_r, 1, memory_type, &status);
+
+      MPI_Type_free(&memory_type);
+      MPI_Type_free(&file_type);
+
+    }
+  }
+
+  MPI_File_close( &fh );
+
+  end = std::chrono::high_resolution_clock::now();
+
+  elapsed = std::chrono::duration_cast<std::chrono::duration<double>>(end - start);
+
+  double gb = (double)N * (double)N * sizeof(double)/1024.0/1024.0/1024.0;
+  if(myproc == 0) 
+    std::cout << "]> matrix wrote in binary " << out_str.str() << " of " << gb << "GB in " 
+	<< elapsed.count() << " seconds" << std::endl;
+
+  //verification of writing
+  if(N <= 10){
+    if(myproc == 0){
+      std::cout << "]> Verification of IO for block-cyclic matrix" << std::endl;
+    }
+    //1. gather matrix to rank 0
+    std::vector<double> A_glob(N*N);
   
+    GatherMatrix(ictxt, N, N, mbsize, nbsize, N_loc_r, N_loc_c, A_loc, A_glob.data());
+ 
+    if(myproc == 0){
+      showMatrix(A_glob.data(), N, N, N);
+    }
+
+    //2. read from the file
+    std::vector<double> A_load(N*N);
+    readMatFromBinary(A_load.data(), out_str.str(), N * N);
+    if(myproc == 0){
+      showMatrix(A_load.data(), N, N, N);
+    }
+    
+    std::vector<double> diff;
+
+    std::transform(A_glob.begin(), A_glob.end(), A_load.begin(), std::back_inserter(diff), [&](double l, double r)
+    {
+      return std::abs(l - r);
+    });
+
+    double max_abs = *std::max_element(diff.begin(), diff.end());
+
+    if(myproc == 0){
+      std::cout << "]> max difference between the gathered matrix and written matrix is: " << max_abs << std::endl;
+    }
+
+  }
   MPI_Finalize();	
 
 }
