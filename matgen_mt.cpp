@@ -118,7 +118,7 @@ int main(int argc, char* argv[]){
     if(myDist == 0){
       myUniformDist<double>(d, n, eps, dmax);
     }else{
-      myGeometricDist<double>(d, n, eps);
+      myGeometricDist<double>(d, n, eps, dmax);
     }
     for (auto i = 0; i < n; ++i) {
       A[i + n * i] = d[i];

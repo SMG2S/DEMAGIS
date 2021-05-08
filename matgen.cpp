@@ -91,7 +91,7 @@ int main(int argc, char* argv[]){
     if(myDist == 0){
       myUniformDist<double>(d, m, eps, dmax);
     }else{
-      myGeometricDist<double>(d, m, eps);
+      myGeometricDist<double>(d, m, eps, dmax);
     }
   }
 

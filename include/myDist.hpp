@@ -10,9 +10,9 @@ void myUniformDist(Base<T>* &eigenv, std::size_t n, Base<T> epsilon, Base<T> dma
 }
 
 template<typename T>
-void myGeometricDist(Base<T>* &eigenv, std::size_t n, Base<T> epsilon){
+void myGeometricDist(Base<T>* &eigenv, std::size_t n, Base<T> epsilon, Base<T> dmax){
   for(auto k = 0; k < n; k++){
     Base<T> exp = (Base<T>)(n - k) / (Base<T>)n;
-    eigenv[k] = std::pow(epsilon, exp);
+    eigenv[k] = dmax * std::pow(epsilon, exp);
   }
 }

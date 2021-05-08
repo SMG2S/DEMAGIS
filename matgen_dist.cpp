@@ -280,7 +280,7 @@ int main(int argc, char* argv[]){
   if(dist == 0){
     myUniformDist<double>(d, N, eps, dmax);
   }else{
-    myGeometricDist<double>(d, N, eps);
+    myGeometricDist<double>(d, N, eps, dmax);
   }
 
   for(std::size_t j = 0; j < blocknb_c; j++){
