@@ -9,14 +9,11 @@ find_package(MPI REQUIRED)
 
 add_subdirectory(wrappers)
 
-add_executable(matgen.exe matgen.cpp)
-target_link_libraries(matgen.exe PRIVATE blas_lapack_comm Boost::program_options )
+add_executable(driver_lapack.exe driver_lapack.cpp)
+target_link_libraries(driver_lapack.exe PRIVATE blas_lapack_comm Boost::program_options )
 
-add_executable(matgen_mt.exe matgen_mt.cpp)
-target_link_libraries(matgen_mt.exe PRIVATE blas_lapack_comm Boost::program_options )
-
-add_executable(matgen_dist.exe matgen_dist.cpp)
-target_link_libraries(matgen_dist.exe PRIVATE blas_lapack_comm Boost::program_options MPI::MPI_CXX )
+#add_executable(matgen_dist.exe matgen_dist.cpp)
+#target_link_libraries(matgen_dist.exe PRIVATE blas_lapack_comm Boost::program_options MPI::MPI_CXX )
 
 
 

@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <fstream>
 #include <complex>
@@ -35,6 +37,23 @@ void readMatFromBinary(T *H, std::string path_in, std::size_t size){
   infile.read((char*)H, sizeof(T) * size);
 
   infile.close();
+}
+
+
+template<typename T>
+void showMatrix(T *mat, std::size_t m, std::size_t n, std::size_t lda){
+
+	for(std::size_t i = 0; i < m; i ++){
+
+	    std::cout << "(" << i << ") " << " : ";
+
+    	    for(std::size_t j = 0; j < n; j++){
+                std::cout << std::scientific;
+                std::cout << std::right << std::setw(16) << mat[i + j * lda] << "    ";
+
+	    }
+	    std::cout << std::endl;
+	}
 }
 
 
