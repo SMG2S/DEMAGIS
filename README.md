@@ -27,7 +27,7 @@ In addition to a recent `C++` compiler, DEMAGIS's external dependencies are [CMa
 1. Clone this repository from GitHub:
 
    ```bash
-   git clone xxxxxxxx
+   git clone https://github.com/SimLabQuantumMaterials/DEMAGIS.git
    ```
 
 2. Compile it with `CMake`
@@ -205,5 +205,5 @@ Artificial Matrices with ScaLAPACK: Options:
 
 ## Copyright and License
 
-MIT License
+[MIT License](https://github.com/SimLabQuantumMaterials/DEMAGIS/blob/master/LICENSE)
 
