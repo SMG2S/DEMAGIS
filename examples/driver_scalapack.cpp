@@ -6,9 +6,6 @@
 #include "myDist.hpp"
 #include "matGen_scalapack.hpp"
 #include "io_mpi.hpp"
-#include "blas_templates.hpp"
-#include "scalapack_utils.hpp"
-
 
 namespace po = boost::program_options;
 
