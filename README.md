@@ -140,7 +140,7 @@ Two examples are provided, which helps user get familiar with DEMAGIS, one for s
 
 - Arguments for the example of shared-memory build
 
-  ```bash
+```bash
 Artificial Matrices MT: Options:
   -h [ --help ]                        show the help
   --N arg (=10)                        number of row and column of matrices to
@@ -164,7 +164,7 @@ Artificial Matrices MT: Options:
                                        the randomness.
   --stddev arg (=1)                    Standard deviation value of Normal
                                        distribution for the randomness.
-  ```
+```
 
 - Arguments for the example of MPI+threads build
 
