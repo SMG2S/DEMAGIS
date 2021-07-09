@@ -7,16 +7,9 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake-mo
 find_package( Boost COMPONENTS serialization program_options REQUIRED)
 find_package(MPI REQUIRED)
 
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/include)
 add_subdirectory(wrappers)
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/wrappers)
 
-add_executable(matgen.exe matgen.cpp)
-target_link_libraries(matgen.exe PRIVATE blas_lapack_comm Boost::program_options )
-
-add_executable(matgen_mt.exe matgen_mt.cpp)
-target_link_libraries(matgen_mt.exe PRIVATE blas_lapack_comm Boost::program_options )
-
-add_executable(matgen_dist.exe matgen_dist.cpp)
-target_link_libraries(matgen_dist.exe PRIVATE blas_lapack_comm Boost::program_options MPI::MPI_CXX )
-
-
+add_subdirectory(examples)
 
