@@ -121,8 +121,6 @@ In addition to a recent `C++` compiler, DEMAGIS's external dependencies are [CMa
                                  mean, stddev, myUniformDist<double>, N, eps, dmax);
     ```
 
-    
-
   - Save the generated matrix `A` into local binary with parallel IO for re-using as follows:
 
     ```c++
