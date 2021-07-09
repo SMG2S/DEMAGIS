@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../wrappers/types.hpp"
+#include "types.hpp"
 
 template<typename T>
 T* myUniformDist(std::size_t n, Base<T> epsilon, Base<T> dmax){

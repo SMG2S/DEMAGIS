@@ -2,8 +2,8 @@
 
 #include <chrono>
 #include <random>
-#include "./io.hpp"
-#include "../wrappers/blas_templates.hpp"
+#include "io.hpp"
+#include "blas_templates.hpp"
 
 template<typename T, class Fn, typename... Ts>
 T* matGen_lapack(std::size_t n, Base<T> mean, Base<T> stddev, Fn fn, Ts... args) {	
@@ -30,8 +30,7 @@ T* matGen_lapack(std::size_t n, Base<T> mean, Base<T> stddev, Fn fn, Ts... args)
     t_geqrf<T>(n, n, M, n, tau.data());
 
     //initial matrix definition
-    auto A_ptr = std::unique_ptr<T[]>(new T[n * n]);  
-    auto *A = A_ptr.get();
+    T *A = new T[n * n];
     for(auto i = 0; i < n * n; i++){
       A[i] = 0.0;
     }
@@ -39,13 +38,6 @@ T* matGen_lapack(std::size_t n, Base<T> mean, Base<T> stddev, Fn fn, Ts... args)
     //generating spectrum
     T *d;
     d = fn( args...);
-
-    std::cout << "n = " << n << std::endl;
-
-    for(auto i = 0; i < n; i++){
-            std::cout << d[i] << ",";
-    }
-    std::cout << std::endl;
 
     for (auto i = 0; i < n; ++i) {
       A[i + n * i] = d[i];
@@ -74,8 +66,7 @@ T* matGen_lapack(std::size_t n, Base<T> mean, Base<T> stddev, Fn fn, Ts... args)
 template<typename T>
 T *matGen_121(std::size_t n){
 
-    auto A_ptr = std::unique_ptr<T[]>(new T[n * n]);
-    auto *A = A_ptr.get();
+    T *A = new T[n * n];	
     for(auto i = 0; i < n * n; i++){
       A[i] = 0.0;
     }
@@ -99,8 +90,7 @@ T *matGen_121(std::size_t n){
 template<typename T>
 T *matGen_WilkinsonPlus(std::size_t n){
 
-    auto A_ptr = std::unique_ptr<T[]>(new T[n * n]);
-    auto *A = A_ptr.get();
+    T *A = new T[n * n];
     for(auto i = 0; i < n * n; i++){
       A[i] = 0.0;
     }

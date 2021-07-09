@@ -1,7 +1,7 @@
 #pragma once
 
 #include <complex>
-#include "./types.hpp"
+#include "types.hpp"
 
 template <typename T>
 std::size_t t_geqrf(std::size_t m, std::size_t n, T* a, std::size_t lda, T* tau);

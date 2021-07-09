@@ -1,8 +1,8 @@
 #include <chrono>
 #include <random>
 #include <boost/program_options.hpp>
-#include "./include/myDist.hpp"
-#include "./include/matGen_lapack.hpp"
+#include "myDist.hpp"
+#include "matGen_lapack.hpp"
 
 namespace po = boost::program_options;
 
@@ -11,7 +11,7 @@ int main(int argc, char* argv[]){
   po::options_description desc("Artificial Matrices MT: Options");
   desc.add_options()
        ("help,h","show the help")
-       ("size", po::value<std::size_t>()->default_value(10), "number of row and column of matrices to be generated.")
+       ("N", po::value<std::size_t>()->default_value(10), "number of row and column of matrices to be generated.")
        ("dmax", po::value<double>()->default_value(21), "A scalar which scales the generated eigenvalues, this makes"
 							 " the maximum absolute eigenvalue is abs(dmax)." )
        ("epsilon", po::value<double>()->default_value(0.1), "This value is epsilon." ) 
@@ -33,7 +33,7 @@ int main(int argc, char* argv[]){
   }
   
   //number of row and column of matrix to be generated
-  std::size_t n = vm["size"].as<std::size_t>();
+  std::size_t n = vm["N"].as<std::size_t>();
   double dmax = vm["dmax"].as<double>();
   double eps = vm["epsilon"].as<double>();
   std::size_t myDist = vm["myDist"].as<std::size_t>();
@@ -70,9 +70,9 @@ int main(int argc, char* argv[]){
   }
 
   if(myDist == 0){
-      A = matGen_lapack<double>(n, mean, stddev, myUniformDist<double>, n, 0.1, 10);
+      A = matGen_lapack<double>(n, mean, stddev, myUniformDist<double>, n, eps, dmax);
   }else if(myDist == 1){
-      A = matGen_lapack<double>(n, mean, stddev, myGeometricDist<double>, n, 0.1, 10);
+      A = matGen_lapack<double>(n, mean, stddev, myGeometricDist<double>, n, eps, dmax);
   }else if(myDist == 2){
       A = matGen_121<double>(n);
   }else if(myDist == 3){
@@ -104,7 +104,8 @@ int main(int argc, char* argv[]){
 
   //save matrix into binary file
   wrtMatIntoBinary<double>(A, out_str.str(), n * n);
-  
+ 
+  delete [] A; 
   return 0;
 }
 
