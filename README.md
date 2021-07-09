@@ -138,7 +138,70 @@ In addition to a recent `C++` compiler, DEMAGIS's external dependencies are [CMa
 
 Two examples are provided, which helps user get familiar with DEMAGIS, one for shared-memory build and one for MPI+threads build.
 
+- Arguments for the example of shared-memory build
 
+  ```bash
+Artificial Matrices MT: Options:
+  -h [ --help ]                        show the help
+  --N arg (=10)                        number of row and column of matrices to
+                                       be generated.
+  --dmax arg (=21)                     A scalar which scales the generated
+                                       eigenvalues, this makes the maximum
+                                       absolute eigenvalue is abs(dmax).
+  --epsilon arg (=0.10000000000000001) This value is epsilon.
+  --myDist arg (=0)                    Specifies my externel setup distribution
+                                       for generating eigenvalues:
+                                        0: Uniform eigenspectrum lambda_k =
+                                       dmax * (epsilon + k * (1 - epsilon) / n
+                                       for k = 0, ..., n-1)
+                                        1: Geometric eigenspectrum lambda_k
+                                       =lambda_k = epsilon^[(n - k) / n] for k
+                                       = 0, ..., n-1)
+                                       2: 1-2-1 matrix
+                                       3: Wilkinson matrix
+
+  --mean arg (=0.5)                    Mean value of Normal distribution for
+                                       the randomness.
+  --stddev arg (=1)                    Standard deviation value of Normal
+                                       distribution for the randomness.
+  ```
+
+- Arguments for the example of MPI+threads build
+
+```bash
+Artificial Matrices with ScaLAPACK: Options:
+  -h [ --help ]                        show the helpAttention, for the current
+                                       implementation of parallel IO, please
+                                       make sure N/mbsize/dim0 == 0 and
+                                       N/bbsize/dim1 == 0
+  --N arg (=10)                        number of row and column of matrices to
+                                       be generated.
+  --dim0 arg (=1)                      first dimension of 2D MPI cartesian
+                                       grid.
+  --dim1 arg (=1)                      second dimension of 2D MPI cartesian
+                                       grid.
+  --mbsize arg (=5)                    ScaLAPACK block size in the first
+                                       dimension of 2D MPI cartesian grid.
+  --nbsize arg (=5)                    ScaLAPACK block size in the second
+                                       dimension of 2D MPI cartesian grid.
+  --dmax arg (=1)                      A scalar which scales the generated
+                                       eigenvalues, this makes the maximum
+                                       absolute eigenvalue is abs(dmax).
+  --epsilon arg (=0.10000000000000001) This value is epsilon.
+  --myDist arg (=0)                    Specifies my externel setup distribution
+                                       for generating eigenvalues:
+                                        0: Uniform eigenspectrum lambda_k =
+                                       dmax * (epsilon + k * (1 - epsilon) / n
+                                       for k = 0, ..., n-1)
+                                        1: Geometric eigenspectrum lambda_k
+                                       =lambda_k = epsilon^[(n - k) / n] for k
+                                       = 0, ..., n-1)
+
+  --mean arg (=0.5)                    Mean value of Normal distribution for
+                                       the randomness.
+  --stddev arg (=1)                    Standard deviation value of Normal
+                                       distribution for the randomness.
+```
 
 ## Copyright and License
 
